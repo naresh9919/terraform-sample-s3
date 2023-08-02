@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage ("checkout from GIT") {
             steps {
-                git branch: 'main', changelog: false, poll: false, url: 'https://github.com/naresh9919/Terraform-sample-code.git'
+                git branch: 'main', changelog: false, poll: false, url: 'https://github.com/naresh9919/terraform-sample-s3.git'
             }
         }
         stage ("terraform init") {
